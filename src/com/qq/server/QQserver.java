@@ -9,12 +9,16 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.sql.ResultSet;
 
 public class QQserver {
-
+    SqlHelper sh = null;
+    //关闭资源
     public void close(){
         try{
-
+            if(sh != null){
+                sh.close();
+            }
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -33,8 +37,19 @@ public class QQserver {
                 Message m = new Message();
                 ObjectOutputStream oos = new ObjectOutputStream(s.getOutputStream());
                // System.out.println(m.getSender()+"已经连上");
-               if(u.getUserId().equals("22") || u.getUserId().equals("33") || u.getUserId().equals("44"))
-               { //开启一个新的线程连接
+               //测试非数据库部分
+                // if(u.getUserId().equals("22") || u.getUserId().equals("33") || u.getUserId().equals("44"))
+                //数据库部分
+                sh = new SqlHelper();
+                String sql = "select QQPassword from QQUser where QQuserId=?";
+                String[] paras = {u.getUserId()};
+                ResultSet rs = sh.queryExecute(sql,paras);
+                String password = null;
+                if(rs.next()){
+                    password = rs.getString("QQPassword").trim();
+                }
+                if (u.getPasswd().equals(password))
+                { //开启一个新的线程连接
                    m.setMesType(MessageType.MESSAGE_SUCCEED);
                    oos.writeObject(m);
                    ServerConClientThread scct = new ServerConClientThread(s);

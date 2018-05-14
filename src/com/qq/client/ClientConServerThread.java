@@ -40,6 +40,11 @@ public class ClientConServerThread extends Thread {
 					// 从服务器获得的消息显示到相应的聊天界面
 					ClientChatView qqChat = ManageQQChat.getQQChat(m.getGetter() + " "
 							+ m.getSender());
+					if(qqChat == null){
+						qqChat = new ClientChatView(m.getGetter(), m.getSender());
+						// 把聊天界面加入到管理类
+						ManageQQChat.addQQChat(m.getGetter() + " " + m.getSender(), qqChat);
+					}
 					// 显示
 					qqChat.showMessage(m);
 				} else if (m.getMesType().equals(
