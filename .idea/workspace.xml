@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e480f8a-b496-4156-8631-fa79ab2e028e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/qq/server/SqlHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myQQ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myQQ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myQQ/com/qq/client/ClientConServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myQQ/com/qq/client/ClientConServerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/qq/client/ClientConServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qq/client/ClientConServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myQQ/com/qq/client/ClientLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myQQ/com/qq/client/ClientLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myQQ/com/qq/client/QQClientConServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myQQ/com/qq/client/QQClientConServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myQQ/com/qq/client/QQClientUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myQQ/com/qq/client/QQClientUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myQQ/com/qq/common/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myQQ/com/qq/common/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myQQ/com/qq/server/QQserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myQQ/com/qq/server/QQserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qq/client/ClientLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qq/client/ClientLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qq/client/QQClientConServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qq/client/QQClientConServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qq/client/QQClientUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qq/client/QQClientUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qq/common/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qq/common/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/qq/server/QQserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qq/server/QQserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qq/server/SqlHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qq/server/SqlHelper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,40 +25,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ClientChatView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/qq/client/ClientChatView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QQserver.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QQserver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/qq/server/QQserver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+            <state relative-caret-position="87">
+              <caret line="59" column="73" lean-forward="true" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2416#2417#0" expanded="true" />
-                <element signature="e#2460#2461#0" expanded="true" />
+                <element signature="e#4909#4910#0" expanded="true" />
+                <element signature="e#4953#4954#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlHelper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SqlHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/qq/server/SqlHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="252">
+              <caret line="108" column="51" lean-forward="true" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qq/common/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientLogin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qq/client/ClientLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2551#2552#0" expanded="true" />
+                <element signature="e#2601#2602#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QQClientConServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/qq/client/QQClientConServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="58" column="27" lean-forward="true" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,18 +107,19 @@
         <option value="$PROJECT_DIR$/src/com/qq/client/ManageQQFriendList.java" />
         <option value="$PROJECT_DIR$/src/com/qq/client/ManageClientConServerThread.java" />
         <option value="$PROJECT_DIR$/src/com/qq/client/ClientChatView.java" />
-        <option value="$PROJECT_DIR$/src/com/qq/client/QQClientConServer.java" />
         <option value="$PROJECT_DIR$/src/com/qq/common/QQClientUser.java" />
-        <option value="$PROJECT_DIR$/src/com/qq/client/QQClientUser.java" />
-        <option value="$PROJECT_DIR$/src/com/qq/client/ClientLogin.java" />
-        <option value="$PROJECT_DIR$/src/com/qq/common/MessageType.java" />
         <option value="$PROJECT_DIR$/src/com/qq/client/QQFriendList.java" />
         <option value="$PROJECT_DIR$/src/com/qq/server/ManageClientThread.java" />
         <option value="$PROJECT_DIR$/src/com/qq/server/ServerConClientThread.java" />
         <option value="$PROJECT_DIR$/src/com/qq/client/ManageQQChat.java" />
         <option value="$PROJECT_DIR$/src/com/qq/client/ClientConServerThread.java" />
-        <option value="$PROJECT_DIR$/src/com/qq/server/SqlHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/qq/common/User.java" />
+        <option value="$PROJECT_DIR$/src/com/qq/client/QQClientUser.java" />
+        <option value="$PROJECT_DIR$/src/com/qq/client/ClientLogin.java" />
+        <option value="$PROJECT_DIR$/src/com/qq/client/QQClientConServer.java" />
+        <option value="$PROJECT_DIR$/src/com/qq/common/MessageType.java" />
         <option value="$PROJECT_DIR$/src/com/qq/server/QQserver.java" />
+        <option value="$PROJECT_DIR$/src/com/qq/server/SqlHelper.java" />
       </list>
     </option>
   </component>
@@ -275,7 +305,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1855" height="1023" extended-state="7" />
+    <frame x="0" y="26" width="1855" height="1023" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -286,7 +316,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17660293" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2519685" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
@@ -373,8 +403,8 @@
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2416#2417#0" expanded="true" />
-            <element signature="e#2460#2461#0" expanded="true" />
+            <element signature="e#4909#4910#0" expanded="true" />
+            <element signature="e#4953#4954#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -521,40 +551,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/qq/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/com/qq/Server3.java" />
     <entry file="file://$PROJECT_DIR$/src/com/qq/Client3.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/qq/client/QQClientConServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qq/client/QQClientUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qq/client/ClientLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qq/common/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qq/client/ManageQQFriendList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -563,13 +559,6 @@
             <element signature="e#387#388#0" expanded="true" />
             <element signature="e#427#428#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qq/common/MessageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -587,22 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qq/common/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,6 +623,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qq/common/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qq/common/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qq/client/ClientChatView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -660,25 +651,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/qq/server/QQserver.java">
+    <entry file="file://$PROJECT_DIR$/src/com/qq/client/QQClientConServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+        <state relative-caret-position="221">
+          <caret line="58" column="27" lean-forward="true" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2416#2417#0" expanded="true" />
-            <element signature="e#2460#2461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qq/client/QQClientUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qq/common/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/qq/server/SqlHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="252">
+          <caret line="108" column="51" lean-forward="true" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qq/client/ClientLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
           <folding>
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2551#2552#0" expanded="true" />
+            <element signature="e#2601#2602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/qq/server/QQserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="59" column="73" lean-forward="true" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4909#4910#0" expanded="true" />
+            <element signature="e#4953#4954#0" expanded="true" />
           </folding>
         </state>
       </provider>

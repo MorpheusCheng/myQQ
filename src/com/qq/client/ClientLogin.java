@@ -64,6 +64,7 @@ public class ClientLogin extends JFrame implements ActionListener {
             User u = new User();
             u.setUserId(jtf.getText().trim());
             u.setPasswd(new String(jpf.getPassword()));
+            u.setFlag(false);
 
             if(qqClientUser.checkUser(u)){
                 try{
@@ -81,10 +82,38 @@ public class ClientLogin extends JFrame implements ActionListener {
                 }
                 dispose();
             }
+            else{
+                JOptionPane.showMessageDialog(this,"用户名或密码错误");
+            }
 
-        else{
-            JOptionPane.showMessageDialog(this,"用户名或密码错误");
         }
+        else if (e.getSource() == jb2){
+            //注册
+            QQClientUser qqClientUser = new QQClientUser();
+            User u = new User();
+            u.setUserId(jtf.getText().trim());
+            u.setPasswd(new String(jpf.getPassword()));
+            u.setFlag(true);
+            if(qqClientUser.checkRegisterUser(u)){
+                try{
+                    QQFriendList qqlist = new QQFriendList(u.getUserId());
+                    ManageQQFriendList.addQQFriendList(u.getUserId(),qqlist);
+
+                    ObjectOutputStream oos = new ObjectOutputStream(ManageClientConServerThread.getClientServerThread(u.getUserId()).getS().getOutputStream());
+                    Message m = new Message();
+                    m.setMesType(MessageType.MESSAGE_GET_ONLINEFRIEND);
+                    m.setSender(u.getUserId());
+                    oos.writeObject(m);
+                }catch (Exception e1)
+                {
+                    e1.printStackTrace();
+                }
+                dispose();
+            }
+            else {
+                JOptionPane.showMessageDialog(this,"用户名已被占用，请重试");
+            }
+
         }
     }
 

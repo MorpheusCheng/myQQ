@@ -102,6 +102,20 @@ public class SqlHelper {
 		return rs;
 	}
 
+	public Boolean InsertData(String  sql, String[] paras){
+		Boolean bl = false;
+		try{
+			ps = ct.prepareStatement(sql);
+			for (int i = 0; i < paras.length; i++){
+				ps.setString(i+1,paras[i]);
+			}
+			bl = ps.execute();
+		}catch (SQLException e){
+			e.printStackTrace();
+		}
+		return bl;
+	}
+
 	// 关闭数据库资源
 	public void close() {
 		// 关闭资源

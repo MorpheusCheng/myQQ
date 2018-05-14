@@ -11,4 +11,7 @@ public class QQClientUser {
 	public boolean checkUser(User u) {
 		return new QQClientConServer().SendLoginInfoTOServer(u);
 	}
+	public boolean checkRegisterUser(User u){
+		return  new QQClientConServer().SendRegisterInfoTOServer(u);
+	}
 }
