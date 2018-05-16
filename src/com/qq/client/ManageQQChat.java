@@ -18,4 +18,8 @@ public class ManageQQChat {
 	public static ClientChatView getQQChat(String loginIdAndFriendId) {
 		return (ClientChatView) hm.get(loginIdAndFriendId);
 	}
+
+	public static void removeQQChat(String loginIdAndFriend){
+		hm.remove(loginIdAndFriend);
+	}
 }

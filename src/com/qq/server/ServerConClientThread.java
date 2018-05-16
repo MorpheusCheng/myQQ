@@ -43,8 +43,13 @@ public class ServerConClientThread extends Thread {
             try{
                 ObjectInputStream ois = new ObjectInputStream(s.getInputStream());
                 Message m = (Message) ois.readObject();
-                System.out.println(m.getSender()+"给"+m.getGetter()+"内容为："+m.getContent());
-                if (m.getMesType().equals(MessageType.MESSAGE_COMM))
+                if(m.getMultiChat() != null){
+                    System.out.println(m.getSender()+"给"+m.getMultiChat()+"内容为："+m.getContent());
+                }
+                else {
+                    System.out.println(m.getSender() + "给" + m.getGetter() + "内容为：" + m.getContent());
+                }
+                if (m.getMesType().equals(MessageType.MESSAGE_COMM))//普通消息
                 {
                     ServerConClientThread sc = ManageClientThread.getClientThread(m.getGetter());
                     ObjectOutputStream oos = new ObjectOutputStream(sc.s.getOutputStream());
@@ -62,9 +67,21 @@ public class ServerConClientThread extends Thread {
                     ObjectOutputStream oos = new ObjectOutputStream(s.getOutputStream());
                     oos.writeObject(m2);
                 }
-                else if (m.getMesType().equals(MessageType.MESSAGE_EXIT)){
+                else if (m.getMesType().equals(MessageType.MESSAGE_EXIT)){//离开消息
                     ManageClientThread.removeClientThread(m.getSender());
                     break;
+                }
+                else if (m.getMesType().equals(MessageType.MESSAGE_MULTI)){//群聊消息
+                    System.out.println("测试："+m.getContent());
+                    for (int i = 0 ; i <= 20 ; i++){
+                        if (ManageClientThread.getClientThread(i+"" )!= null && !(i+"").equals(m.getSender())){
+                            m.setGetter(i+"");
+                            ServerConClientThread sc = ManageClientThread.getClientThread(i+"");
+                            ObjectOutputStream oos = new ObjectOutputStream(sc.s.getOutputStream());
+                            oos.writeObject(m);
+                            System.out.println("给："+i+" 消息发送成功");
+                        }
+                    }
                 }
 
             }catch (Exception e){

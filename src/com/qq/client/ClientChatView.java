@@ -3,11 +3,12 @@ package com.qq.client;
 
 import com.qq.common.Message;
 import  com.qq.common.MessageType;
-import com.qq.server.ManageClientThread;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.Date;
@@ -57,6 +58,14 @@ public class ClientChatView  extends JFrame  implements ActionListener{
 
         jp.add(jtf);
         jp.add(jb);
+
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                super.windowClosing(e);
+                ManageQQChat.removeQQChat(ownerId+" "+friendId);
+            }
+        });
 
         add(jsp,"Center");
         add(jp,"South");

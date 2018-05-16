@@ -64,6 +64,15 @@ public class ClientConServerThread extends Thread {
 					if (qqFriendList != null) {
 						qqFriendList.updateFriend(m);
 					}
+				}else if (m.getMesType().equals(MessageType.MESSAGE_MULTI)){
+					//群聊包
+					MultiChatView multiChatView = ManageMultiChat.getMultiChat(m.getGetter()+" "+m.getMultiChat());
+					if (multiChatView == null){
+						System.out.println("窗口被关闭了，需要新建群聊窗口");
+						multiChatView = new MultiChatView(m.getGetter(),m.getMultiChat());
+						ManageMultiChat.addMultiChat(m.getGetter()+" "+m.getMultiChat(),multiChatView);
+					}
+					multiChatView.showMessages(m);
 				}
 			} catch (Exception e) {
 				e.printStackTrace();

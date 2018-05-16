@@ -25,7 +25,8 @@ public class Message implements Serializable {
 	private String content;	//内容
 	
 	private String sendTime;//时间
-	
+
+	private String MultiChat;//群聊信息
 	
 	public String getSendTime() {
 		return sendTime;
@@ -65,5 +66,13 @@ public class Message implements Serializable {
 
 	public void setMesType(String mesType) {
 		this.mesType = mesType;
+	}
+
+	public void setMultiChat(String multiChat) {
+		MultiChat = multiChat;
+	}
+
+	public String getMultiChat() {
+		return MultiChat;
 	}
 }
