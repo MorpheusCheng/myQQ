@@ -155,7 +155,7 @@ public class QQFriendList extends JFrame implements ActionListener, MouseListene
 		});
 		// 设置窗体
 		setTitle("山寨QQ--" + ownerId);
-		setIconImage(new ImageIcon("images/qq.gif").getImage());
+		setIconImage(new ImageIcon("images/icon.jpg").getImage());
 		setSize(250, 500);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

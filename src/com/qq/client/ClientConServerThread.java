@@ -74,6 +74,33 @@ public class ClientConServerThread extends Thread {
 					}
 					multiChatView.showMessages(m);
 				}
+				else if (m.getMesType().equals(MessageType.MESSAGE_FILE)){//传输文件
+					ClientChatView qqChat = ManageQQChat.getQQChat(m.getGetter() + " "
+							+ m.getSender());
+					if(qqChat == null){
+						qqChat = new ClientChatView(m.getGetter(), m.getSender());
+						// 把聊天界面加入到管理类
+						ManageQQChat.addQQChat(m.getGetter() + " " + m.getSender(), qqChat);
+					}
+					File file = new File("./FileRecv/"+m.getFile().getName());
+					FileInputStream fis = new FileInputStream(m.getFile());
+					FileOutputStream fos = new FileOutputStream(file);
+					try{
+						byte[] buf = new byte[1024];
+						//记录实际读取到的字节
+						int n = 0;
+						//循环读取
+						while((n = fis.read(buf)) != -1){
+							//输出到指定文件
+							fos.write(buf);
+						}
+					}catch (Exception e){
+						e.printStackTrace();
+					}
+					m.setContent(m.getFile().getName()+" 接收成功");
+					qqChat.showMessage(m);
+					System.out.println("文件 "+m.getFile().getName()+" 接收成功！" );
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

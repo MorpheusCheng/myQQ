@@ -76,7 +76,7 @@ public class QQserver {
                         password = rs.getString("QQPassword").trim();
                     }
 
-                    if (u.getPasswd().equals(password) )
+                    if (u.getPasswd().equals(password) && ManageClientThread.getClientThread(u.getUserId()) == null)
                     { //登录成功，开启一个新的线程连接
                         m.setMesType(MessageType.MESSAGE_SUCCEED);
                         oos.writeObject(m);

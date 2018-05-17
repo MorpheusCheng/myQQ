@@ -52,6 +52,7 @@ public class ClientLogin extends JFrame implements ActionListener {
         setTitle("登录界面");
         setSize(600,300);
         setLocation(500,500);
+        setIconImage(new ImageIcon("images/icon.jpg").getImage());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }

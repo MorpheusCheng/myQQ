@@ -8,6 +8,7 @@
  */
 package com.qq.common;
 
+import java.io.File;
 import java.io.Serializable;
 
 public class Message implements Serializable {
@@ -27,6 +28,8 @@ public class Message implements Serializable {
 	private String sendTime;//时间
 
 	private String MultiChat;//群聊信息
+
+	private File file;
 	
 	public String getSendTime() {
 		return sendTime;
@@ -74,5 +77,13 @@ public class Message implements Serializable {
 
 	public String getMultiChat() {
 		return MultiChat;
+	}
+
+	public File getFile(){
+		return file;
+	}
+
+	public void setFile(File file) {
+		this.file = file;
 	}
 }

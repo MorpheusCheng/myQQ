@@ -49,12 +49,12 @@ public class ServerConClientThread extends Thread {
                 else {
                     System.out.println(m.getSender() + "给" + m.getGetter() + "内容为：" + m.getContent());
                 }
-                if (m.getMesType().equals(MessageType.MESSAGE_COMM))//普通消息
+                if (m.getMesType().equals(MessageType.MESSAGE_COMM) || m.getMesType().equals(MessageType.MESSAGE_FILE))//普通消息
                 {
                     ServerConClientThread sc = ManageClientThread.getClientThread(m.getGetter());
                     ObjectOutputStream oos = new ObjectOutputStream(sc.s.getOutputStream());
                     oos.writeObject(m);
-                    System.out.println("消息发送成功");
+                    System.out.println("消息或文件发送成功");
                 }
                 else if (m.getMesType().equals(MessageType.MESSAGE_GET_ONLINEFRIEND)){
                     System.out.println(m.getSender()+" 要他的好友");
