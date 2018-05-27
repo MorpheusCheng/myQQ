@@ -69,6 +69,7 @@ public class ServerConClientThread extends Thread {
                 }
                 else if (m.getMesType().equals(MessageType.MESSAGE_EXIT)){//离开消息
                     ManageClientThread.removeClientThread(m.getSender());
+                    notifyAllOtherFriends(ManageClientThread.getAllOnLineUserId().replaceAll(m.getSender(),""));//发送下线消息
                     break;
                 }
                 else if (m.getMesType().equals(MessageType.MESSAGE_MULTI)){//群聊消息

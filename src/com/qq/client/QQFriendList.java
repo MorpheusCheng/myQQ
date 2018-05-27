@@ -42,13 +42,24 @@ public class QQFriendList extends JFrame implements ActionListener, MouseListene
 	// 更新在线好友
 	public void updateFriend(Message m) {
 		String onLineFriend[] = m.getContent().split(" ");
+		for (int i = 0 ; i < 50 ; i++)
+		{
+			jbls1[i].setEnabled(false);
+			jbls1Flag[i] = false;
+		}
+		for (int i = 0 ; i < 20 ; i++){
+			jbls2[i].setEnabled(false);
+			jbls2Flag[i] = false;
+		}
 
 		for (int i = 0; i < onLineFriend.length; i++) {
 
 			jbls1[Integer.parseInt(onLineFriend[i]) - 1].setEnabled(true);
 			jbls1Flag[Integer.parseInt(onLineFriend[i]) - 1] = true;
-			jbls2[Integer.parseInt((onLineFriend[i]))-1].setEnabled(true);
-			jbls2Flag[Integer.parseInt(onLineFriend[i])-1] = true;
+			if (Integer.parseInt((onLineFriend[i])) < 20){
+				jbls2[Integer.parseInt((onLineFriend[i]))-1].setEnabled(true);
+				jbls2Flag[Integer.parseInt(onLineFriend[i])-1] = true;
+			}
 			System.out.println("已更新 "+ onLineFriend[i] +" 的状态");
 		}
 
@@ -156,7 +167,7 @@ public class QQFriendList extends JFrame implements ActionListener, MouseListene
 		// 设置窗体
 		setTitle("山寨QQ--" + ownerId);
 		setIconImage(new ImageIcon("images/icon.jpg").getImage());
-		setSize(250, 500);
+		setSize(350, 700);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);

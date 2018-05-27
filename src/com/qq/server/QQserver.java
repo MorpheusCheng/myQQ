@@ -66,7 +66,7 @@ public class QQserver {
                         ManageClientThread.addClientThread(u.getUserId(),scct);
                         scct.start();
                         System.out.println("注册用户成功，测试是否开始下一个： 用户: "+u.getUserId());
-                        scct.notifyAllOtherFriends(u.getUserId());
+                        scct.notifyAllOtherFriends(ManageClientThread.getAllOnLineUserId());
                     }
                 }
                 else//登录部分
@@ -84,7 +84,7 @@ public class QQserver {
                         ManageClientThread.addClientThread(u.getUserId(),scct);
                         scct.start();
                         System.out.println("测试是否开始下一个： 用户: "+u.getUserId());
-                        scct.notifyAllOtherFriends(u.getUserId());
+                        scct.notifyAllOtherFriends(ManageClientThread.getAllOnLineUserId());
 
                     }
 
