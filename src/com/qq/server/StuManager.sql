@@ -8,7 +8,7 @@ use QQdb;
 create table QQUser
 (
 	QQUserId char(20) primary key,	--账号
-	QQPassword char(16) not null,	--密码
+	QQPassword char(16) not null	--密码
 );
 
 --插入测试用例
