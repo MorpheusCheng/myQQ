@@ -72,11 +72,9 @@ public class SqlHelper {
 	public SqlHelper() {
 		try {
 			// 连接驱动
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName(driver);
 			// 获取连接
-			ct = DriverManager.getConnection(
-					"jdbc:mysql://127.0.0.1:3306/QQdb", "root",
-					"123456");
+			ct = DriverManager.getConnection(url, username, password);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
